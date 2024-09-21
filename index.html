@@ -16,7 +16,9 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         tailwind.config = {
             theme: {
@@ -193,19 +195,37 @@
                     </div>
                     <div class="w-[808px] h-[268px] bg-[#F7F8F8] rounded-[24px] mt-[24px] p-[32px]">
                         <div class="flex justify-between">
-                            <div><p class="text-[18px] font-semibold text-[#03071299]">Route</p></div>
-                            <div><h3 class="text-[18px] font-semibold">Dhaka - Sylhet</h3></div>
+                            <div>
+                                <p class="text-[18px] font-semibold text-[#03071299]">Route</p>
+                            </div>
+                            <div>
+                                <h3 class="text-[18px] font-semibold">Dhaka - Sylhet</h3>
+                            </div>
                         </div>
-                        <div class="my-6"><hr class="border-dashed border-[#03071233]"></div>
+                        <div class="my-6">
+                            <hr class="border-dashed border-[#03071233]">
+                        </div>
                         <div class="flex justify-between">
-                            <div><p class="text-[18px] font-semibold text-[#03071299]">Departure Time</p></div>
-                            <div><h3 class="text-[18px] font-semibold">9:00 PM</h3></div>
+                            <div>
+                                <p class="text-[18px] font-semibold text-[#03071299]">Departure Time</p>
+                            </div>
+                            <div>
+                                <h3 class="text-[18px] font-semibold">9:00 PM</h3>
+                            </div>
                         </div>
-                        <div class="my-6"><hr class="border-dashed border-[#03071233]"></div>
+                        <div class="my-6">
+                            <hr class="border-dashed border-[#03071233]">
+                        </div>
                         <div class="flex gap-6">
-                            <div><button class="px-4 py-[18px] font-medium text-[#030712CC] bg-[#0307120D] rounded-[12px]">Boarding Point - Laxmipur</button></div>
-                            <div><button class="px-4 py-[18px] font-medium text-[#030712CC] bg-[#0307120D] rounded-[12px]">Dropping Point - Bogura</button></div>
-                            <div><button class="px-[44px] py-[18px] font-medium text-[#030712CC] bg-[#0307120D] rounded-[12px]">Est. Time - 11 Hour</button></div>
+                            <div><button
+                                    class="px-4 py-[18px] font-medium text-[#030712CC] bg-[#0307120D] rounded-[12px]">Boarding
+                                    Point - Laxmipur</button></div>
+                            <div><button
+                                    class="px-4 py-[18px] font-medium text-[#030712CC] bg-[#0307120D] rounded-[12px]">Dropping
+                                    Point - Bogura</button></div>
+                            <div><button
+                                    class="px-[44px] py-[18px] font-medium text-[#030712CC] bg-[#0307120D] rounded-[12px]">Est.
+                                    Time - 11 Hour</button></div>
                         </div>
                     </div>
                 </div>
@@ -219,120 +239,234 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--section: seat section -->
-    <section class="w-[1170px] mx-auto mt-[24px] bg-white p-8 grid grid-cols-3 gap-5">
-        <div class="col-span-2">
-            <div>
-                <h2 class="text-2xl font-semibold">Select Your Seat</h2>
+        <!-- seat section -->
+        <section class="w-[1170px] mx-auto mt-[24px] rounded-[24px] bg-white p-8 grid grid-cols-5 gap-[100px]">
+            <div class="col-span-3">
+                <div>
+                    <h2 class="text-2xl font-semibold">Select Your Seat</h2>
+                </div>
+                <div class="border-b-2 border-dashed my-4"></div>
+                <div class="flex justify-between items-center">
+                    <p>
+                        <i class="fa-solid fa-couch"></i>
+                        <span>Available</span>
+                    </p>
+                    <p class="text-color-one">
+                        <i class="fa-solid fa-couch"></i>
+                        <span>Selected</span>
+                    </p>
+                </div>
+                <div class="border-b-2 border-dashed my-4"></div>
+                <!-- seat section start -->
+                <section class="grid grid-cols-12 items-center gap-y-5 mr-20">
+                    <p class="col-span-1"></p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <p class="col-span-8"></p>
+                        <button class="btn col-span-2">
+                            <img src="images/seat-green-filled.png" alt="">
+                        </button>
+                    </div>
+                    <p class="col-span-1">A</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A4</button>
+                    </div>
+                    <p class="col-span-1">B</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B4</button>
+                    </div>
+                    <p class="col-span-1">C</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C4</button>
+                    </div>
+                    <p class="col-span-1">D</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D4</button>
+                    </div>
+                    <p class="col-span-1">E</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">E1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">E2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A4</button>
+                    </div>
+                    <p class="col-span-1">F</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F4</button>
+                    </div>
+                    <p class="col-span-1">G</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G4</button>
+                    </div>
+                    <p class="col-span-1">H</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H4</button>
+                    </div>
+                    <p class="col-span-1">I</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I4</button>
+                    </div>
+                    <p class="col-span-1">J</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J1</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J2</button>
+                        <p class="col-span-2"></p>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J3</button>
+                        <button
+                            class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J4</button>
+                    </div>
+                </section>
             </div>
-            <div class="border-b-2 border-dashed my-4"></div>
-            <div class="flex justify-between items-center">
-                <p>
-                    <i class="fa-solid fa-couch"></i>
-                    <span>Available</span>
-                </p>
-                <p class="text-color-one">
-                    <i class="fa-solid fa-couch"></i>
-                    <span>Selected</span>
-                </p>
-            </div>
-            <div class="border-b-2 border-dashed my-4"></div>
-        <!-- seat section start -->
-        <section class="grid grid-cols-12 items-center gap-y-5 mr-20">
-            <p class="col-span-1"></p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <p class="col-span-8"></p>
-                <button class="btn col-span-2">
-                    <img src="images/seat-green-filled.png" alt="">
-                </button>
-            </div>
-            <p class="col-span-1">A</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A4</button>
-            </div>
-            <p class="col-span-1">B</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">B4</button>
-            </div>
-            <p class="col-span-1">C</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">C4</button>
-            </div>
-            <p class="col-span-1">D</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">D4</button>
-            </div>
-            <p class="col-span-1">E</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">E1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">E2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">A4</button>
-            </div>
-            <p class="col-span-1">F</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">F4</button>
-            </div>
-            <p class="col-span-1">G</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">G4</button>
-            </div>
-            <p class="col-span-1">H</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">H4</button>
-            </div>
-            <p class="col-span-1">I</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">I4</button>
-            </div>
-            <p class="col-span-1">J</p>
-            <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J1</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J2</button>
-                <p class="col-span-2"></p>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J3</button>
-                <button class="col-span-2 btn btn-md hover:text-white hover:bg-black transition-colors duration-200 ease-in-out">J4</button>
+            <!-- seat input section -->
+            <div class="col-span-2">
+                <div>
+                    <h2 class="text-2xl font-semibold">Select Your Seat</h2>
+                </div>
+                <div class="border-b-2 my-4 border-dashed"></div>
+                <section>
+                    <div class="bg-[#F7F8F8] p-8 rounded-xl">
+                        <h3 class="flex justify-between">
+                            <p class="flex">
+                                <span>Seat</span>
+                                <span
+                                    class="bg-color-one text-white flex justify-center items-center rounded-full text-sm w-4 h-4 p-2 font-normal">
+                                    0
+                                </span>
+                            </p>
+                            <p>Class</p>
+                            <p>Price</p>
+                        </h3>
+                        <div class="border-b-2 my-4 border-dashed"></div>
+                        <ul class="space-y-5">
+                            <h3 class="text-3xl font-semibold text-error capitalize text-center">
+                                No Seat Booked
+                            </h3>
+                        </ul>
+                        <div class="border-b-2 my-4 border-dashed"></div>
+                        <div class="text-lg font-semibold flex justify-between">
+                            <p>Total price</p>
+                            <p>
+                                <span>BDT:</span>
+                                <span>****</span>
+                            </p>
+                        </div>
+                        <div class="border-b-2 my-4 border-dashed"></div>
+                        <div
+                            class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
+                            <input type="text" disabled class="input my-5 w-full input-primary border-primary"
+                                placeholder="Have a coupon?">
+                            <button class="btn btn-primary" disabled>Apply</button>
+                        </div>
+                        <div class="text-lg font-semibold flex justify-between">
+                            <p>Grand price</p>
+                            <p>
+                                <span>BDT:</span>
+                                <span>****</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <label class="form-control w-full my-3">
+                            <div class="label">
+                                <span class="label-text font-bold text-base">Passenger Name*</span>
+                            </div>
+                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
+                        </label>
+                        <label class="form-control w-full my-3">
+                            <div class="label">
+                                <span class="label-text font-bold text-base">Phone Number*</span>
+                            </div>
+                            <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
+                        </label>
+                        <label class="form-control w-full my-3">
+                            <div class="label">
+                                <span class="label-text font-bold text-base">Email ID</span>
+                            </div>
+                            <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
+                        </label>
+                        <button disabled class="btn bg-color-one mt-5 text-lg text-white uppercase w-full">
+                            Next
+                        </button>
+                    </div>
+                    <div class="flex justify-evenly">
+                        <a href="#" class="text-sm underline">Terms and Conditions</a>
+                        <a href="#" class="text-sm underline">Cancellation Policy</a>
+                    </div>
             </div>
         </section>
-        </div>
-        <div>
-            input section
-        </div>
     </section>
+    
 </body>
 
 </html>
