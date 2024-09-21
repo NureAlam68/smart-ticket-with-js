@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-one': '#1DD100',
+                        'color-two': '#F7F8F8',
+                        'color-three': '#1C1C1C',
+                        'color-four': '#212121',
+                        'color-five': '#ABEF5F33',
+                    },
+                    fontFamily: {
+                        inter: ["Inter", 'sans-serif'],
+                        raleway: ["Raleway", 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="max-w-[1440px] container mx-auto">
+    <nav class="w-[1173px] mx-auto flex justify-between mt-[48px] items-center">
+        <div>
+            <h2 class="text-[36px] font-extrabold">P-Ticket</h2>
+        </div>
+        <div class="flex gap-[56px]">
+            <a class="text-[18px] font-medium text-[#030712B3]" href="#">Home</a>
+            <a class="text-[18px] font-medium text-[#030712B3]"href="#">About</a>
+            <a class="text-[18px] font-medium text-[#030712B3]"href="#">Destination</a>
+            <a class="text-[18px] font-medium text-[#030712B3]"href="#">Search</a>
+        </div>
+        <div>
+            <button class="px-[25px] py-[10px] bg-[#1DD1001A] rounded-[12px] border border-green-200">
+                <div class="flex gap-1 items-center">
+                    <p class="text-color-one">Bus</p>
+                    <img class="h-[20px]" src="images/bus-icon.png" alt="">
+                </div>
+            </button>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <section class="mt-[37px]">
+        <div class="w-max-[1170px] h-[550px] mx-auto bg-[url('./images/banner.png')] bg-contain bg-center bg-no-repeat"></div>
+    </section>
+</body>
+
+</html>
