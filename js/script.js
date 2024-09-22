@@ -5,7 +5,9 @@ const totalPriceEl = document.getElementById('total-price');
 const couponInputEl = document.getElementById('coupon-field');
 const couponBtnEl = document.getElementById('coupon-btn');
 const defaultTextEl = document.getElementById('default-text');
-const grandTotalEl = document.getAnimations('grand-total');
+const grandTotalEl = document.getElementById('grand-total');
+const phoneNumberEl = document.getElementById('phone-number');
+const nextButtonEl = document.getElementById('next-btn');
 
 
 let totalBooked = [];
@@ -69,7 +71,25 @@ document.getElementById('coupon-btn').addEventListener('click', function() {
         couponSave = totalPrice * .20;
     }
 
+    const showCouponPriceEl = document.getElementById('show-coupon-price');
+    showCouponPriceEl.innerHTML = `
+    <p>Discount</p>
+    <p>
+        <span>-BDT: </span>
+        <span>${ couponSave.toFixed(2) }</span>
+    </p>
+    `
+
     const grandTotalValue = totalPrice - couponSave;
-    const grandTotalEl = document.getElementById('grand-total');
     grandTotalEl.innerText = grandTotalValue.toFixed(2);
-})
+});
+
+
+phoneNumberEl.addEventListener('input', function(e) {
+    const inputValue = e.target.value;
+    if(inputValue.length >= 11) {
+        nextButtonEl.removeAttribute('disabled');
+    }
+});
+
+
