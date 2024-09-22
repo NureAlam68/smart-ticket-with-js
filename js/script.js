@@ -93,3 +93,6 @@ phoneNumberEl.addEventListener('input', function(e) {
 });
 
 
+document.getElementById('btn-continue').addEventListener('click', function() {
+    window.location.reload();
+})
