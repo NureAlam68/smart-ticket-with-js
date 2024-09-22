@@ -186,9 +186,10 @@
                         </div>
                         <div>
                             <button class="px-[30px] py-[18px] rounded-[12px] border border-color-one bg-[#1DD10026]">
-                                <div class="flex gap-2">
+                                <div class="flex gap-2 text-color-one text-[20px] font-bold">
                                     <img src="images/seat-green.png" alt="">
-                                    <p class="text-color-one text-[20px] font-bold">See All Offers</p>
+                                    <span id="available-seat">40</span>
+                                    <span>Seats</span>
                                 </div>
                             </button>
                         </div>
@@ -399,7 +400,7 @@
                         <h3 class="flex justify-between">
                             <p class="flex">
                                 <span>Seat</span>
-                                <span
+                                <span id="total-booked"
                                     class="bg-color-one text-white flex justify-center items-center rounded-full text-sm w-4 h-4 p-2 font-normal">
                                     0
                                 </span>
@@ -418,15 +419,15 @@
                             <p>Total price</p>
                             <p>
                                 <span>BDT:</span>
-                                <span>****</span>
+                                <span id="total-price">****</span>
                             </p>
                         </div>
                         <div class="border-b-2 my-4 border-dashed"></div>
                         <div
                             class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
-                            <input type="text" disabled class="input my-5 w-full input-primary border-primary"
+                            <input id="coupon-field" type="text" disabled class="input my-5 w-full input-color-one border-color-one"
                                 placeholder="Have a coupon?">
-                            <button class="btn btn-primary" disabled>Apply</button>
+                            <button id="coupon-btn" class="btn bg-color-one text-white" disabled>Apply</button>
                         </div>
                         <div class="text-lg font-semibold flex justify-between">
                             <p>Grand price</p>
